@@ -12,7 +12,7 @@ function App() {
     const [todos, settodos] = useState([])
 
     const addTodo = (todo)=>{
-        settodos((prev)=>[{id: Date.now , ...todo},...prev])
+        settodos((prev)=>[{id: Date.now() , ...todo},...prev])
     }
 
     const toggleCompleted= (id)=>{

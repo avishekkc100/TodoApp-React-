@@ -10,9 +10,11 @@ function TodoForm() {
         e.preventDefault();
         if(!todo) return
         // addTodo({id:Date.now, todo:todo, completed:false}) //id already given so not necessary
-        addTodo({todo:todo, completed:false})
-        setTodo("")
+        addTodo({todo, completed:false})
+        setTodo(" ")
     }
+    // console.log(todo);
+    
 
     return (
         <form onSubmit={add} className="flex">
